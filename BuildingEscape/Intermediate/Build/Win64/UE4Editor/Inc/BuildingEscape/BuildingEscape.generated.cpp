@@ -17,7 +17,6 @@ void EmptyLinkFunctionForGeneratedCode1BuildingEscape() {}
 // Cross Module References
 	ENGINE_API class UClass* Z_Construct_UClass_AGameModeBase();
 	ENGINE_API class UClass* Z_Construct_UClass_UActorComponent();
-	ENGINE_API class UClass* Z_Construct_UClass_AActor_NoRegister();
 	ENGINE_API class UClass* Z_Construct_UClass_ATriggerVolume_NoRegister();
 
 	BUILDINGESCAPE_API class UClass* Z_Construct_UClass_ABuildingEscapeGameModeBase_NoRegister();
@@ -88,7 +87,6 @@ void EmptyLinkFunctionForGeneratedCode1BuildingEscape() {}
 
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-				UProperty* NewProp_ActorThatOpens = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("ActorThatOpens"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(ActorThatOpens, UOpenDoor), 0x0040000000000001, Z_Construct_UClass_AActor_NoRegister());
 				UProperty* NewProp_PressurePlate = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("PressurePlate"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(PressurePlate, UOpenDoor), 0x0040000000000001, Z_Construct_UClass_ATriggerVolume_NoRegister());
 				UProperty* NewProp_OpenAngle = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("OpenAngle"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(OpenAngle, UOpenDoor), 0x0040000000020001);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
@@ -101,8 +99,6 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 				MetaData->SetValue(OuterClass, TEXT("ClassGroupNames"), TEXT("Custom"));
 				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("OpenDoor.h"));
 				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("OpenDoor.h"));
-				MetaData->SetValue(NewProp_ActorThatOpens, TEXT("Category"), TEXT("OpenDoor"));
-				MetaData->SetValue(NewProp_ActorThatOpens, TEXT("ModuleRelativePath"), TEXT("OpenDoor.h"));
 				MetaData->SetValue(NewProp_PressurePlate, TEXT("Category"), TEXT("OpenDoor"));
 				MetaData->SetValue(NewProp_PressurePlate, TEXT("ModuleRelativePath"), TEXT("OpenDoor.h"));
 				MetaData->SetValue(NewProp_OpenAngle, TEXT("Category"), TEXT("OpenDoor"));
@@ -113,7 +109,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 		check(OuterClass->GetClass());
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UOpenDoor, 60200988);
+	IMPLEMENT_CLASS(UOpenDoor, 2817500577);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UOpenDoor(Z_Construct_UClass_UOpenDoor, &UOpenDoor::StaticClass, TEXT("/Script/BuildingEscape"), TEXT("UOpenDoor"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UOpenDoor);
 	void UPositionReport::StaticRegisterNativesUPositionReport()
@@ -163,7 +159,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 			ReturnPackage = CastChecked<UPackage>(StaticFindObjectFast(UPackage::StaticClass(), nullptr, FName(TEXT("/Script/BuildingEscape")), false, false));
 			ReturnPackage->SetPackageFlags(PKG_CompiledIn | 0x00000000);
 			FGuid Guid;
-			Guid.A = 0x49200135;
+			Guid.A = 0xC5165EAE;
 			Guid.B = 0x23841B22;
 			Guid.C = 0x00000000;
 			Guid.D = 0x00000000;
