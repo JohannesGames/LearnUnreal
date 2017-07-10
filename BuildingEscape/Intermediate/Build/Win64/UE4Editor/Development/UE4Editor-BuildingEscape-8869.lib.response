@@ -1,0 +1,18 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UE4Editor-BuildingEscape-8869.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"F:\Program Files\Epic Games\UE_4.16\Engine\Intermediate\Build\Win64\UE4Editor\Development\Engine\SharedPCH.Engine.h.obj"
+"F:\Udemy\Unreal\LearnUnreal\BuildingEscape\Intermediate\Build\Win64\UE4Editor\Development\BuildingEscape\BuildingEscape.cpp.obj"
+"F:\Udemy\Unreal\LearnUnreal\BuildingEscape\Intermediate\Build\Win64\UE4Editor\Development\BuildingEscape\BuildingEscapeGameModeBase.cpp.obj"
+"F:\Udemy\Unreal\LearnUnreal\BuildingEscape\Intermediate\Build\Win64\UE4Editor\Development\BuildingEscape\Grabber.cpp.obj"
+"F:\Udemy\Unreal\LearnUnreal\BuildingEscape\Intermediate\Build\Win64\UE4Editor\Development\BuildingEscape\OpenDoor.cpp.obj"
+"F:\Udemy\Unreal\LearnUnreal\BuildingEscape\Intermediate\Build\Win64\UE4Editor\Development\BuildingEscape\PositionReport.cpp.obj"
+"F:\Udemy\Unreal\LearnUnreal\BuildingEscape\Intermediate\Build\Win64\UE4Editor\Development\BuildingEscape\BuildingEscape.generated.cpp.obj"
+"F:\Program Files\Epic Games\UE_4.16\Engine\Intermediate\Build\Win64\UE4Editor\Development\BuildingEscape\PCLaunch.rc.res"
+"F:\Program Files\Epic Games\UE_4.16\Engine\Intermediate\Build\Win64\UE4Editor\Development\ModuleVersionResource.rc.inl.res"
+/OUT:"F:\Udemy\Unreal\LearnUnreal\BuildingEscape\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BuildingEscape-8869.lib"
