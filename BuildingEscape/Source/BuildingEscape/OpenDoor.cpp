@@ -21,8 +21,6 @@ void UOpenDoor::BeginPlay()
 	Super::BeginPlay();
 
 	Owner = GetOwner();
-		
-	ActorThatOpens = GetWorld()->GetFirstPlayerController()->GetPawn();
 }
 
 
@@ -32,7 +30,7 @@ void UOpenDoor::TickComponent(float DeltaTime, ELevelTick TickType, FActorCompon
 	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
 
 	// Poll the trigger volume
-	if (PressurePlate->IsOverlappingActor(ActorThatOpens))
+	if (GetTotalMassOfActorsOnPlate() >= 40.f)
 	{
 		// if the ActorThatOpens is in the volume
 		OpenDoor();
@@ -46,9 +44,29 @@ void UOpenDoor::TickComponent(float DeltaTime, ELevelTick TickType, FActorCompon
 	}
 }
 
+float UOpenDoor::GetTotalMassOfActorsOnPlate()
+{
+	float TotalMass = 0.f;
+
+	TArray<AActor*> OverlappingActors;
+
+	if (PressurePlate) return 0;
+	PressurePlate->GetOverlappingActors(OUT OverlappingActors);
+
+	for (auto* actor : OverlappingActors)
+	{
+		TotalMass += actor->FindComponentByClass<UPrimitiveComponent>()->GetMass();
+
+		UE_LOG(LogTemp, Warning, TEXT("Placed %s on pressure plate"), *actor->GetName());
+	}
+
+	return TotalMass;
+}
+
 void UOpenDoor::OpenDoor()
 {
-	if (Owner) Owner->SetActorRotation(FRotator(0.0f, OpenAngle, 0.0f));
+	//if (Owner) Owner->SetActorRotation(FRotator(0.0f, OpenAngle, 0.0f));
+	OnOpenRequest.Broadcast();
 }
 
 void UOpenDoor::CloseDoor()

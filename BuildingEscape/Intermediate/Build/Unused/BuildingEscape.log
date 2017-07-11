@@ -1,13 +1,12 @@
 ﻿  Compiling game modules for hot reload
   Parsing headers for BuildingEscapeEditor
     Running UnrealHeaderTool "F:\Udemy\Unreal\LearnUnreal\BuildingEscape\BuildingEscape.uproject" "F:\Udemy\Unreal\LearnUnreal\BuildingEscape\Intermediate\Build\Win64\BuildingEscapeEditor\Development\BuildingEscapeEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
-  Reflection code generated for BuildingEscapeEditor in 3.1792902 seconds
-  Performing 4 actions (9 in parallel)
-  BuildingEscape.generated.cpp
-  Grabber.cpp
-  [3/4] Link UE4Editor-BuildingEscape-8869.dll
-  [4/4] Link UE4Editor-BuildingEscape-8869.lib
-     Creating library F:\Udemy\Unreal\LearnUnreal\BuildingEscape\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BuildingEscape-8869.lib and object F:\Udemy\Unreal\LearnUnreal\BuildingEscape\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BuildingEscape-8869.exp
-     Creating library F:\Udemy\Unreal\LearnUnreal\BuildingEscape\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BuildingEscape-8869.suppressed.lib and object F:\Udemy\Unreal\LearnUnreal\BuildingEscape\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BuildingEscape-8869.suppressed.exp
+  Reflection code generated for BuildingEscapeEditor in 2.7015456 seconds
+  Performing 3 actions (9 in parallel)
+  OpenDoor.cpp
+  [2/3] Link UE4Editor-BuildingEscape-1893.dll
+  [3/3] Link UE4Editor-BuildingEscape-1893.lib
+     Creating library F:\Udemy\Unreal\LearnUnreal\BuildingEscape\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BuildingEscape-1893.lib and object F:\Udemy\Unreal\LearnUnreal\BuildingEscape\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BuildingEscape-1893.exp
+     Creating library F:\Udemy\Unreal\LearnUnreal\BuildingEscape\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BuildingEscape-1893.suppressed.lib and object F:\Udemy\Unreal\LearnUnreal\BuildingEscape\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BuildingEscape-1893.suppressed.exp
   Deploying BuildingEscapeEditor Win64 Development...
-  Total build time: 121.26 seconds (Local executor: 115.35 seconds)
+  Total build time: 13.87 seconds (Local executor: 9.27 seconds)
